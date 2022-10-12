@@ -220,7 +220,7 @@ metadata:
   namespace: velero
   annotations:
 
-    eks.amazonaws.com/role-arn: arn:aws:iam::844333597536:role/skildops-velero-demo
+    eks.amazonaws.com/role-arn: arn:aws:iam::${ACCOUNT_ID}:role/${IAM_ROLE_NAME}
   labels:
     app.kubernetes.io/name: velero
     app.kubernetes.io/instance: velero
